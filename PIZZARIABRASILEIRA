@@ -70,10 +70,10 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BackgroundTransparency = 0.3
-Frame.BorderColor3 = Color3.fromRGB(0, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 255, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)  -- vá embora
-Frame.AnchorPoint = Vector2.new(0.5, 0.5)  -- nada aqui
+Frame.Position = UDim2.new(0.5, 0, 0.5, 0)  -- Centraliza a interface na tela
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)  -- Ajusta o ponto de ancoragem para o centro
 Frame.Size = UDim2.new(0, 394, 0, 245)
 addCorner(Frame)
 
@@ -138,22 +138,6 @@ close.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()  -- Usuwa cały ScreenGui, zamykając interfejs
 end)
 
--- Other Images
-ImageLabel_3.Parent = Frame
-ImageLabel_3.Position = UDim2.new(0.373, 0, 0.731, 0)
-ImageLabel_3.Size = UDim2.new(0, 136, 0, 58)
-ImageLabel_3.Image = "rbxassetid://87096536019651"
-
-ImageLabel_4.Parent = Frame
-ImageLabel_4.Position = UDim2.new(0.363, 0, 0.427, 0)
-ImageLabel_4.Size = UDim2.new(0, 140, 0, 67)
-ImageLabel_4.Image = "rbxassetid://92628353225469"
-
-ImageLabel_5.Parent = Frame
-ImageLabel_5.Position = UDim2.new(0.373, 0, 0.249, 0)
-ImageLabel_5.Size = UDim2.new(0, 136, 0, 35)
-ImageLabel_5.Image = "rbxassetid://110885655073504"
-
 execute2.MouseButton1Click:Connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/kigredns/SanderXV4.2.2/refs/heads/main/NormalSS.lua'))()
 end)
@@ -164,7 +148,7 @@ end)
 
 -- Function to copy the link when clicked
 copylink1.MouseButton1Click:Connect(function()
-    local link1 = "https://www.roblox.com/pl/catalog/80680383943488/Sander-X-SanderDev-Shirt"
+    local link1 = "https://www.roblox.com/pl/catalog/0000/Sander-X-SanderDev-Shirt"
     copyToClipboard(link1)  -- Copy link1 to clipboard
 end)
 
